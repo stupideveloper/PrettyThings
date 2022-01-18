@@ -28,6 +28,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importDefault(require("react"));
 function Input(_a) {
     var className = _a.className, props = __rest(_a, ["className"]);
-    return (react_1.default.createElement("input", __assign({ className: "focus:rounded-lg border-0 w-full sm:w-1/2 md:w-auto border-b-2 focus:border-blue-500 transition ".concat(className) }, props)));
+    return (react_1.default.createElement("input", __assign({ className: "focus:rounded-lg border-0 w-full sm:w-1/2 md:w-auto border-b-2 focus:border-blue-500 transition ".concat(className ? className : '') }, props)));
 }
 exports.default = Input;

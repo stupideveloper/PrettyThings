@@ -29,7 +29,7 @@ var react_1 = __importDefault(require("react"));
 var prop_types_1 = __importDefault(require("prop-types"));
 function Label(_a) {
     var label = _a.label, htmlFor = _a.htmlFor, className = _a.className, props = __rest(_a, ["label", "htmlFor", "className"]);
-    return (react_1.default.createElement("label", __assign({ className: "block text-gray-500 mb-2 ".concat(className), htmlFor: htmlFor ? htmlFor : undefined }, props), label));
+    return (react_1.default.createElement("label", __assign({ className: "block text-gray-500 mb-2 ".concat(className ? className : ''), htmlFor: htmlFor ? htmlFor : undefined }, props), label));
 }
 exports.default = Label;
 Label.propTypes = {
