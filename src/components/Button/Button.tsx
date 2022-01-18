@@ -2,13 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import LoadingIcon from '../LoadingIcon';
 
-interface ButtonProps {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   //icon: React.ReactNode;
   label: string;
   loading?: boolean;
   disabled?: boolean;
   varient?: 'outline' | 'ghost' | 'default';
-  onClick: () => void;
 }
 
 
