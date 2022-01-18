@@ -1,29 +1,35 @@
 import React from 'react';
 
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+
 import Button from './Button';
 
 export default {
+
   title: 'PrettyThings/Button',
   component: Button,
-  argTypes: {
-    //backgroundColor: { control: 'color' },
-  },
-};
+} as ComponentMeta<typeof Button>;
 
-const Template = (args) => <Button {...args} />;
+
+const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
 export const Default = Template.bind({});
+
 Default.args = {
-  label: 'Default Button',
-  type: 'default',
+  varient: 'default',
+  label: 'Button',
 };
+
 export const Outline = Template.bind({});
+
 Outline.args = {
-  label: 'Outline Button',
-  type: 'outline',
+  varient: 'outline',
+  label: 'Button',
 };
+
 export const Ghost = Template.bind({});
+
 Ghost.args = {
-  label: 'Ghost Button',
-  type: 'ghost',
+  varient: 'ghost',
+  label: 'Button',
 };
