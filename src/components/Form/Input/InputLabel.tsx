@@ -3,13 +3,14 @@ import PropTypes from 'prop-types';
 
 interface LabelProps extends React.LabelHTMLAttributes<HTMLLabelElement> {
  	label: string;
-	 htmlFor?: string;
+	htmlFor?: string;
+  className?: string;
 }
 
 
-export default function Label({label, htmlFor, ...props }: LabelProps) {
+export default function Label({label, htmlFor, className, ...props }: LabelProps) {
 	return (
-		<label className='block text-gray-500 mb-2' htmlFor={htmlFor ? htmlFor : undefined}>{label}</label>
+		<label className={`block text-gray-500 mb-2 ${className}`} htmlFor={htmlFor ? htmlFor : undefined} {...props}>{label}</label>
 	)
 }
 

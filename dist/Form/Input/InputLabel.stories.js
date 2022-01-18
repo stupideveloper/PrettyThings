@@ -14,15 +14,17 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Input = void 0;
+exports.InputLabel = void 0;
 var react_1 = __importDefault(require("react"));
-var Input_1 = __importDefault(require("./Input"));
+var InputLabel_1 = __importDefault(require("./InputLabel"));
 exports.default = {
-    title: 'PrettyThings/Form/Input/Input',
-    component: Input_1.default,
+    title: 'PrettyThings/Form/InputLabel',
+    component: InputLabel_1.default,
 };
-var Template = function (args) { return react_1.default.createElement(Input_1.default, __assign({}, args)); };
-exports.Input = Template.bind({});
-exports.Input.args = {
+var Template = function (args) { return react_1.default.createElement(InputLabel_1.default, __assign({}, args)); };
+exports.InputLabel = Template.bind({});
+exports.InputLabel.args = {
+    htmlFor: 'mail',
+    label: 'Email',
     className: '',
 };

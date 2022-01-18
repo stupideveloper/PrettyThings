@@ -2,22 +2,23 @@ import React from 'react';
 
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import LabelComponent from './Label';
+import LabelComponent from './InputLabel';
 
 export default {
 
-  title: 'PrettyThings/Form/Input/Label',
+  title: 'PrettyThings/Form/InputLabel',
   component: LabelComponent,
 } as ComponentMeta<typeof LabelComponent>;
 
 
 const Template: ComponentStory<typeof LabelComponent> = (args) => <LabelComponent {...args} />;
 
-export const Label = Template.bind({});
+export const InputLabel = Template.bind({});
 
-Label.args = {
+InputLabel.args = {
   htmlFor: 'mail',
 	label: 'Email',
+  className: '',
 };
 
 

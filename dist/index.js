@@ -8,5 +8,5 @@ var Button_1 = __importDefault(require("./Button/Button"));
 exports.Button = Button_1.default;
 var Input_1 = __importDefault(require("./Form/Input/Input"));
 exports.Input = Input_1.default;
-var Label_1 = __importDefault(require("./Form/Input/Label"));
-exports.InputLabel = Label_1.default;
+var InputLabel_1 = __importDefault(require("./Form/Input/InputLabel"));
+exports.InputLabel = InputLabel_1.default;

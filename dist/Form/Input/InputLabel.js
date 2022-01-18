@@ -26,8 +26,21 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importDefault(require("react"));
-function Input(_a) {
-    var className = _a.className, props = __rest(_a, ["className"]);
-    return (react_1.default.createElement("input", __assign({ className: "focus:rounded-lg border-0 w-full sm:w-1/2 md:w-auto border-b-2 focus:border-blue-500 transition ".concat(className) }, props)));
+var prop_types_1 = __importDefault(require("prop-types"));
+function Label(_a) {
+    var label = _a.label, htmlFor = _a.htmlFor, className = _a.className, props = __rest(_a, ["label", "htmlFor", "className"]);
+    return (react_1.default.createElement("label", __assign({ className: "block text-gray-500 mb-2 ".concat(className), htmlFor: htmlFor ? htmlFor : undefined }, props), label));
 }
-exports.default = Input;
+exports.default = Label;
+Label.propTypes = {
+    label: prop_types_1.default.string.isRequired,
+    onClick: prop_types_1.default.func,
+    loading: prop_types_1.default.bool,
+    varient: prop_types_1.default.string,
+    disabled: prop_types_1.default.bool,
+};
+Label.defaultProps = {
+    onClick: undefined,
+    loading: false,
+    disabled: false,
+};

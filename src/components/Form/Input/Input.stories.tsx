@@ -15,8 +15,8 @@ const Template: ComponentStory<typeof InputComponent> = (args) => <InputComponen
 
 export const Input = Template.bind({});
 
-// Input.args = {
-//   label: 'label',
-// };
+Input.args = {
+  className: '',
+};
 
 

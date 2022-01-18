@@ -1,6 +1,6 @@
 import Button from './Button/Button';
 import Input from './Form/Input/Input';
-import InputLabel from './Form/Input/Label';
+import InputLabel from './Form/Input/InputLabel';
 
 export { 
   Button,
