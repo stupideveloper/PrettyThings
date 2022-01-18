@@ -10,7 +10,7 @@ interface LabelProps extends React.LabelHTMLAttributes<HTMLLabelElement> {
 
 export default function Label({label, htmlFor, className, ...props }: LabelProps) {
 	return (
-		<label className={`block text-gray-500 mb-2 ${className}`} htmlFor={htmlFor ? htmlFor : undefined} {...props}>{label}</label>
+		<label className={`block text-gray-500 mb-2 ${className ? className : ''}`} htmlFor={htmlFor ? htmlFor : undefined} {...props}>{label}</label>
 	)
 }
 
